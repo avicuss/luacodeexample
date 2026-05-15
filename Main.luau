@@ -1,3 +1,5 @@
+-- DU: boserpro1234 RU: boserpro1234
+
 type Main = {
 	-- Parts
 	Head:             BasePart,
