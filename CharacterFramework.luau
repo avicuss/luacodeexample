@@ -448,8 +448,8 @@ function Main.TryJump(self: Main)
 
 	self.Humanoid.JumpHeight = 0
 
-	-- We want to wait a bit more for the cooldown to be removed
-	task.delay(Config.JumpCooldown - 0.1, function()
+	-- We want to wait a bit more for the cooldown to be removed, we also have to acccount the impulseduration so the jump cooldown is not actually affected by it
+	task.delay(Config.JumpCooldown - Config.JumpImpulseDuration, function()
 		self.JumpCooldown = false
 	end)
 end
