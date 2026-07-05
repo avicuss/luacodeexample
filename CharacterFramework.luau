@@ -154,6 +154,8 @@ function Main.Initialize(self: Main)
 		self.Animations[Animation.Name] = Animator:LoadAnimation(Animation)
 	end
 	
+	-- We don't want the AutoJump as we have a jump cooldown on our own
+	-- We also want to set the JumpHeight to 0 so the player can't jump on their own
 	self.Humanoid.AutoJumpEnabled = false
 	self.Humanoid.JumpHeight = 0
 	
