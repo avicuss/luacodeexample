@@ -30,9 +30,9 @@ type MainVariables = {
 type MainFunctions = {
 	Initialize: (MainVariables) -> (),
 	
-	BindMovementLoop: (self: MainVariables) -> boolean,
+	BindMovementLoop: (self: MainVariables) -> (),
 	BindHumanoidStates: (self: MainVariables) -> (),
-	BindAimState: (self: MainVariables) -> boolean,
+	BindAimState: (self: MainVariables) -> (),
 	BindInputs: (self: MainVariables) -> (),
 	InputsConnections: (self: MainVariables) -> (),
 	ApplyStateAnimation: (self: MainVariables) -> (),
